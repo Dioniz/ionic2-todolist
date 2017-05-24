@@ -25,7 +25,7 @@
 
   <ion-card *ngFor="let lista of listaDeseosService.listas | pendientes; let i = index">
 
-    <ion-item color="dark" (click)="verDetalle(lista, i)">
+    <ion-item color="dark"  (click)="verDetalle(lista, i)">
       <h2>{{ lista.nombre }}</h2>
       <ion-note item-right>
         {{ lista.items.length }} items

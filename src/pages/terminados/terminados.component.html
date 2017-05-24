@@ -6,7 +6,7 @@
 
 <ion-content padding>
 
-  <ion-grid *ngIf="( listaDeseosService.listas | pendientes:false ).length === 0">
+  <ion-grid *ngIf="( listaDeseosService.listas | pendientes:true ).length === 0">
 
     <ion-row>
 
@@ -23,7 +23,7 @@
 
   </ion-grid>
 
-  <ion-card *ngFor="let lista of listaDeseosService.listas | pendientes:false; let i = index">
+  <ion-card *ngFor="let lista of listaDeseosService.listas | pendientes:true; let i = index">
 
     <ion-item color="dark" (click)="verDetalle(lista, i)">
       <h2>{{ lista.nombre }}</h2>
