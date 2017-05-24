@@ -1,7 +1,7 @@
 export class ListaItem {
 
   private nombre:string;
-  private completado:boolean;
+  completado:boolean;
 
   getNombre(){
     return this.nombre;

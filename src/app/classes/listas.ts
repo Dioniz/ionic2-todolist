@@ -2,9 +2,9 @@ import { ListaItem } from './lista-item';
 
 export class Lista {
 
-  private nombre:string;
-  private terminada:boolean;
-  private items:ListaItem[];
+  nombre:string;
+  terminada:boolean;
+  items:ListaItem[];
 
   constructor( nombre:string ) {
     this.nombre = nombre;
