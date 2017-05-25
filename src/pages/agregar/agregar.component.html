@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-navbar color="primary">
+  <ion-navbar color="primary-purple">
     <ion-title>{{ nombreLista | placeholder:'Nueva lista' }}</ion-title>
   </ion-navbar>
 </ion-header>
@@ -28,7 +28,7 @@
       </ion-item>
 
       <button (click)="agregar()"
-        ion-button  class="button-block">Agregar ítem</button>
+        ion-button  class="button-block" color="primary-purple">Agregar ítem</button>
 
     </ion-card-content>
 
@@ -66,7 +66,7 @@
   </ion-card>
 
   <button (click)="guardarLista()"
-    ion-button icon-left class="button-block">
+    ion-button icon-left class="button-block" color="primary-purple">
     <ion-icon ios="ios-add-circle" md="md-add-circle"></ion-icon>
     Agregar lista
   </button>
